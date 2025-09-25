@@ -4,6 +4,7 @@ Coding Principles Demonstrated:
 1. KISS
 2. DRY
 3. Single responsibility
+More in-depth explanation at the end.
 """
 
 #Simple calculator class with basic arithmetic operations.
@@ -64,3 +65,19 @@ while True:
 
 if __name__ == "__main__":
   main()
+
+
+"""
+KISS:
+  The calculator is simple and not overcomplicated. It only does the basics.
+  The code avoids unecessary complexity, like memory storage.
+
+DRY:
+  Operator to function mapping to avoid multiple if-elif-else blocks for each operation.
+  Each operation is only implemented once in the Calculator class.
+
+Single Responsibility:
+  The Calculator class only handles math operations.
+  The main function only handles user interaction and function calling.
+  The separation makes the code more modular and maintainable.
+"""
